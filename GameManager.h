@@ -7,7 +7,7 @@
 //This class should ideally be a <<Singleton>>
 class GameManager {
 private:
-    PlayerCharacter m_players[3];
+    PlayerCharacter m_players[2];
     void startGame();
     void createCharacter(int nPlayer);
 public:

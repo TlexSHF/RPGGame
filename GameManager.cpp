@@ -3,10 +3,13 @@
 //
 
 //TODO User input validation
+// game actually only works for 2 players
 
 
 #include <iostream>
 #include "GameManager.h"
+#include "Druid.h"
+
 void GameManager::startGame() {
 
 }
@@ -14,6 +17,7 @@ void GameManager::startGame() {
 void GameManager::createCharacter(int nPlayer) {
     int pClass = 0;
     std::string pName = {};
+    PlayerCharacter player = Druid(pName);
 
     std::cout << "Player Classes:" << std::endl
               << "   1 - Warrior" << std::endl << "   2 - Ranger" << std::endl << "   3 - Druid" << std::endl
@@ -24,6 +28,8 @@ void GameManager::createCharacter(int nPlayer) {
     std::cin >> pName;
     std::cout << "Hello " << pName << std::endl;
     std::cout << "----------------------------" << std::endl;
+
+
 }
 
 void GameManager::run() {

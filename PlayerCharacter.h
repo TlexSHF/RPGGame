@@ -5,14 +5,14 @@
 #include <string>
 
 class PlayerCharacter {
-private:
+protected:
     std::string m_name = {};
     Attack m_attacks[2];
     int m_numAttacks = 0;
     int m_hitPoints = 0;
 
 public:
-    PlayerCharacter(std::string name, int hitPoints);
+    PlayerCharacter(std::string name);
     void runTurn();
     void hit();
     void addAttack(std::string name, int damage, int cooldown);

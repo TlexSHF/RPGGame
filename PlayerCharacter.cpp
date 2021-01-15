@@ -3,7 +3,7 @@
 
 //TODO Later make classes for each of the 'classes'
 
-PlayerCharacter::PlayerCharacter(std::string name, int hitPoints) : m_hitPoints(hitPoints){
+PlayerCharacter::PlayerCharacter(std::string name) : m_name(name) {
 
 }
 

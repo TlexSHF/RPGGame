@@ -3,11 +3,10 @@
 
 #include "PlayerCharacter.h"
 
-class Druid : PlayerCharacter{
+class Druid : public PlayerCharacter{
 private:
-    int m_hitPoints = 100;
 public:
-
+    Druid(std::string name);
 };
 
 
