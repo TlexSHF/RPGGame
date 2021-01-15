@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/CLion/C++/RPGSpill/GameManager.cpp
+iostream
+-
+GameManager.h
+D:/CLion/C++/RPGSpill/GameManager.h
+
+D:/CLion/C++/RPGSpill/GameManager.h
+
