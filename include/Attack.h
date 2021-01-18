@@ -6,10 +6,12 @@
 class Attack {
 public:
     bool isReady;
+    std::string getInfo();
+    void runAttack();
     Attack();
     Attack(std::string name, int damage, int cooldown);
     ~Attack();
-    void runAttack();
+
 private:
     std::string m_name;
     int m_damage;

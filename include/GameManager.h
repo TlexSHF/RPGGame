@@ -8,7 +8,8 @@
 
 class GameManager {
 private:
-    PlayerCharacter* m_players;
+    PlayerCharacter** m_players;
+    void round(int n);
     void startGame();
     PlayerCharacter* createCharacter(int nPlayer);
 public:

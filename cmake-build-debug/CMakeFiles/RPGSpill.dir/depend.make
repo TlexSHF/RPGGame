@@ -8,7 +8,6 @@ CMakeFiles\RPGSpill.dir\src\Druid.cpp.obj: ..\include\Druid.h
 CMakeFiles\RPGSpill.dir\src\Druid.cpp.obj: ..\src\Druid.cpp
 
 CMakeFiles\RPGSpill.dir\src\GameManager.cpp.obj: ..\include\Attack.h
-CMakeFiles\RPGSpill.dir\src\GameManager.cpp.obj: ..\include\Druid.h
 CMakeFiles\RPGSpill.dir\src\GameManager.cpp.obj: ..\include\GameManager.h
 CMakeFiles\RPGSpill.dir\src\GameManager.cpp.obj: ..\include\PlayerCharacter.h
 CMakeFiles\RPGSpill.dir\src\GameManager.cpp.obj: ..\src\GameManager.cpp

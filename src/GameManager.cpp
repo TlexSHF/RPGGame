@@ -1,11 +1,24 @@
 #include <iostream>
 #include "../include/GameManager.h"
-#include "../include/Druid.h"
 
 //TODO User input validation
 // game actually only works for 2 players
 
+void GameManager::round(int n) {
+    std::cout << "Entering Arena\n"
+                 "Round 1 - Stats:\n";
+    for(int i = 0; i < 2; i++) {
+        std::cout << m_players[i]->getName() << ": " << m_players[i]->getHP() << '/' << m_players[i]->getMaxHP() << std::endl;
+    }
+    for(int i = 0; i < 2; i++) {
+        m_players[i]->runTurn();
+    }
+}
+
 void GameManager::startGame() {
+    for(int i = 0; i < 2; i++) {
+        round(i + 1);
+    }
 
 }
 
@@ -41,14 +54,12 @@ void GameManager::run() {
                  "----------------------------" << std::endl;
 
     for(int i = 0; i < 2; i++) {
-        createCharacter(i+1);
-        //m_players =
+        m_players[i] = createCharacter(i+1);
     }
-
     startGame();
 }
 
-GameManager::GameManager() : m_players{new PlayerCharacter[2]}{
+GameManager::GameManager() /*: m_players{new PlayerCharacter[2]}*/{
     std::cout << "Constructing GameManager" << std::endl;
 }
 

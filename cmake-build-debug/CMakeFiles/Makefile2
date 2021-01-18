@@ -48,10 +48,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\simone\Documents\Kristiania\2021-0Spring\C++\RPGGame
+CMAKE_SOURCE_DIR = D:\CLion\C++\RPGSpill
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\simone\Documents\Kristiania\2021-0Spring\C++\RPGGame\cmake-build-debug
+CMAKE_BINARY_DIR = D:\CLion\C++\RPGSpill\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -78,14 +78,14 @@ clean: CMakeFiles\RPGSpill.dir\clean
 CMakeFiles\RPGSpill.dir\all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\simone\Documents\Kristiania\2021-0Spring\C++\RPGGame\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target RPGSpill"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLion\C++\RPGSpill\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target RPGSpill"
 .PHONY : CMakeFiles\RPGSpill.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\RPGSpill.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\simone\Documents\Kristiania\2021-0Spring\C++\RPGGame\cmake-build-debug\CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CLion\C++\RPGSpill\cmake-build-debug\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\simone\Documents\Kristiania\2021-0Spring\C++\RPGGame\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CLion\C++\RPGSpill\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles\RPGSpill.dir\rule
 
 # Convenience name for target.

@@ -1,6 +1,11 @@
 #include <iostream>
 #include "../include/Attack.h"
 
+
+std::string Attack::getInfo() {
+    return m_name + ": damage: " + std::to_string(m_damage) + ", cooldown: " + std::to_string(m_cooldown);
+}
+
 void Attack::runAttack() {
     std::cout << "Running attack" << std::endl;
 }

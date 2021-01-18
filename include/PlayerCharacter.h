@@ -8,18 +8,22 @@ enum class GameClass{warrior, ranger, druid};
 
 class PlayerCharacter {
 public:
-    void runTurn();
-    void hit();
-    int getAttacks();
+    std::string getName();
+    GameClass getClass();
     int getHP();
+    int getMaxHP();
+    Attack* getAttacks();
+    void runTurn();
+    void attack();
     PlayerCharacter();
     PlayerCharacter(std::string name, GameClass gameClass);
     ~PlayerCharacter();
-protected:
+private:
     std::string m_name;
     GameClass m_class;
     int m_hitPoints;
-    Attack* m_attacks;
+    int m_maxHP;
+    Attack** m_attacks;
 };
 
 
