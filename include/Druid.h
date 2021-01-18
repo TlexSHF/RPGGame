@@ -1,12 +1,13 @@
 #ifndef RPGSPILL_DRUID_H
 #define RPGSPILL_DRUID_H
 
-#include "PlayerCharacter.h"
+#include <iostream>
 
-class Druid : public PlayerCharacter{
-private:
+class Druid{
 public:
+    Druid();
     Druid(std::string name);
+    ~Druid();
 };
 
 

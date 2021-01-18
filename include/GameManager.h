@@ -5,15 +5,26 @@
 
 //TODO i set a max on players, this too needs to be fixed
 //This class should ideally be a <<Singleton>>
+
 class GameManager {
 private:
-    PlayerCharacter m_players[2];
+    PlayerCharacter* m_players;
     void startGame();
-    void createCharacter(int nPlayer);
+    PlayerCharacter* createCharacter(int nPlayer);
 public:
+    GameManager();
+    ~GameManager();
     void run();
 
 };
+
+
+/*std::ostream& operator<<(std::ostream& os, GameClass gc) {
+    switch(gc) {
+        case GameClass::warrior:
+            return os<<"warrior";
+    }
+}*/
 
 
 #endif //RPGSPILL_GAMEMANAGER_H

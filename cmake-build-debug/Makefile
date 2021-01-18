@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\CLion\C++\RPGSpill
+CMAKE_SOURCE_DIR = C:\Users\simone\Documents\Kristiania\2021-0Spring\C++\RPGGame
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\CLion\C++\RPGSpill\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\simone\Documents\Kristiania\2021-0Spring\C++\RPGGame\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -84,9 +84,9 @@ rebuild_cache\fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\CLion\C++\RPGSpill\cmake-build-debug\CMakeFiles D:\CLion\C++\RPGSpill\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\simone\Documents\Kristiania\2021-0Spring\C++\RPGGame\cmake-build-debug\CMakeFiles C:\Users\simone\Documents\Kristiania\2021-0Spring\C++\RPGGame\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\CLion\C++\RPGSpill\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\simone\Documents\Kristiania\2021-0Spring\C++\RPGGame\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -127,140 +127,140 @@ RPGSpill\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\build
 .PHONY : RPGSpill\fast
 
-Attack.obj: Attack.cpp.obj
+src\Attack.obj: src\Attack.cpp.obj
 
-.PHONY : Attack.obj
-
-# target to build an object file
-Attack.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\Attack.cpp.obj
-.PHONY : Attack.cpp.obj
-
-Attack.i: Attack.cpp.i
-
-.PHONY : Attack.i
-
-# target to preprocess a source file
-Attack.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\Attack.cpp.i
-.PHONY : Attack.cpp.i
-
-Attack.s: Attack.cpp.s
-
-.PHONY : Attack.s
-
-# target to generate assembly for a file
-Attack.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\Attack.cpp.s
-.PHONY : Attack.cpp.s
-
-Druid.obj: Druid.cpp.obj
-
-.PHONY : Druid.obj
+.PHONY : src\Attack.obj
 
 # target to build an object file
-Druid.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\Druid.cpp.obj
-.PHONY : Druid.cpp.obj
+src\Attack.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\src\Attack.cpp.obj
+.PHONY : src\Attack.cpp.obj
 
-Druid.i: Druid.cpp.i
+src\Attack.i: src\Attack.cpp.i
 
-.PHONY : Druid.i
+.PHONY : src\Attack.i
 
 # target to preprocess a source file
-Druid.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\Druid.cpp.i
-.PHONY : Druid.cpp.i
+src\Attack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\src\Attack.cpp.i
+.PHONY : src\Attack.cpp.i
 
-Druid.s: Druid.cpp.s
+src\Attack.s: src\Attack.cpp.s
 
-.PHONY : Druid.s
+.PHONY : src\Attack.s
 
 # target to generate assembly for a file
-Druid.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\Druid.cpp.s
-.PHONY : Druid.cpp.s
+src\Attack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\src\Attack.cpp.s
+.PHONY : src\Attack.cpp.s
 
-GameManager.obj: GameManager.cpp.obj
+src\Druid.obj: src\Druid.cpp.obj
 
-.PHONY : GameManager.obj
+.PHONY : src\Druid.obj
 
 # target to build an object file
-GameManager.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\GameManager.cpp.obj
-.PHONY : GameManager.cpp.obj
+src\Druid.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\src\Druid.cpp.obj
+.PHONY : src\Druid.cpp.obj
 
-GameManager.i: GameManager.cpp.i
+src\Druid.i: src\Druid.cpp.i
 
-.PHONY : GameManager.i
+.PHONY : src\Druid.i
 
 # target to preprocess a source file
-GameManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\GameManager.cpp.i
-.PHONY : GameManager.cpp.i
+src\Druid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\src\Druid.cpp.i
+.PHONY : src\Druid.cpp.i
 
-GameManager.s: GameManager.cpp.s
+src\Druid.s: src\Druid.cpp.s
 
-.PHONY : GameManager.s
+.PHONY : src\Druid.s
 
 # target to generate assembly for a file
-GameManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\GameManager.cpp.s
-.PHONY : GameManager.cpp.s
+src\Druid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\src\Druid.cpp.s
+.PHONY : src\Druid.cpp.s
 
-PlayerCharacter.obj: PlayerCharacter.cpp.obj
+src\GameManager.obj: src\GameManager.cpp.obj
 
-.PHONY : PlayerCharacter.obj
+.PHONY : src\GameManager.obj
 
 # target to build an object file
-PlayerCharacter.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\PlayerCharacter.cpp.obj
-.PHONY : PlayerCharacter.cpp.obj
+src\GameManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\src\GameManager.cpp.obj
+.PHONY : src\GameManager.cpp.obj
 
-PlayerCharacter.i: PlayerCharacter.cpp.i
+src\GameManager.i: src\GameManager.cpp.i
 
-.PHONY : PlayerCharacter.i
+.PHONY : src\GameManager.i
 
 # target to preprocess a source file
-PlayerCharacter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\PlayerCharacter.cpp.i
-.PHONY : PlayerCharacter.cpp.i
+src\GameManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\src\GameManager.cpp.i
+.PHONY : src\GameManager.cpp.i
 
-PlayerCharacter.s: PlayerCharacter.cpp.s
+src\GameManager.s: src\GameManager.cpp.s
 
-.PHONY : PlayerCharacter.s
+.PHONY : src\GameManager.s
 
 # target to generate assembly for a file
-PlayerCharacter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\PlayerCharacter.cpp.s
-.PHONY : PlayerCharacter.cpp.s
+src\GameManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\src\GameManager.cpp.s
+.PHONY : src\GameManager.cpp.s
 
-main.obj: main.cpp.obj
+src\PlayerCharacter.obj: src\PlayerCharacter.cpp.obj
 
-.PHONY : main.obj
+.PHONY : src\PlayerCharacter.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\main.cpp.obj
-.PHONY : main.cpp.obj
+src\PlayerCharacter.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\src\PlayerCharacter.cpp.obj
+.PHONY : src\PlayerCharacter.cpp.obj
 
-main.i: main.cpp.i
+src\PlayerCharacter.i: src\PlayerCharacter.cpp.i
 
-.PHONY : main.i
+.PHONY : src\PlayerCharacter.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\main.cpp.i
-.PHONY : main.cpp.i
+src\PlayerCharacter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\src\PlayerCharacter.cpp.i
+.PHONY : src\PlayerCharacter.cpp.i
 
-main.s: main.cpp.s
+src\PlayerCharacter.s: src\PlayerCharacter.cpp.s
 
-.PHONY : main.s
+.PHONY : src\PlayerCharacter.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\main.cpp.s
-.PHONY : main.cpp.s
+src\PlayerCharacter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\src\PlayerCharacter.cpp.s
+.PHONY : src\PlayerCharacter.cpp.s
+
+src\main.obj: src\main.cpp.obj
+
+.PHONY : src\main.obj
+
+# target to build an object file
+src\main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\src\main.cpp.obj
+.PHONY : src\main.cpp.obj
+
+src\main.i: src\main.cpp.i
+
+.PHONY : src\main.i
+
+# target to preprocess a source file
+src\main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\src\main.cpp.i
+.PHONY : src\main.cpp.i
+
+src\main.s: src\main.cpp.s
+
+.PHONY : src\main.s
+
+# target to generate assembly for a file
+src\main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\src\main.cpp.s
+.PHONY : src\main.cpp.s
 
 # Help Target
 help:
@@ -271,21 +271,21 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... RPGSpill
-	@echo ... Attack.obj
-	@echo ... Attack.i
-	@echo ... Attack.s
-	@echo ... Druid.obj
-	@echo ... Druid.i
-	@echo ... Druid.s
-	@echo ... GameManager.obj
-	@echo ... GameManager.i
-	@echo ... GameManager.s
-	@echo ... PlayerCharacter.obj
-	@echo ... PlayerCharacter.i
-	@echo ... PlayerCharacter.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... src/Attack.obj
+	@echo ... src/Attack.i
+	@echo ... src/Attack.s
+	@echo ... src/Druid.obj
+	@echo ... src/Druid.i
+	@echo ... src/Druid.s
+	@echo ... src/GameManager.obj
+	@echo ... src/GameManager.i
+	@echo ... src/GameManager.s
+	@echo ... src/PlayerCharacter.obj
+	@echo ... src/PlayerCharacter.i
+	@echo ... src/PlayerCharacter.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
 .PHONY : help
 
 

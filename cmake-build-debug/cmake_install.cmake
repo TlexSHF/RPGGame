@@ -1,4 +1,4 @@
-# Install script for directory: D:/CLion/C++/RPGSpill
+# Install script for directory: C:/Users/simone/Documents/Kristiania/2021-0Spring/C++/RPGGame
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/CLion/C++/RPGSpill/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/simone/Documents/Kristiania/2021-0Spring/C++/RPGGame/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

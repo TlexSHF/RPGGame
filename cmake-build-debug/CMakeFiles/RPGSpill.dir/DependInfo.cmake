@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/CLion/C++/RPGSpill/Attack.cpp" "D:/CLion/C++/RPGSpill/cmake-build-debug/CMakeFiles/RPGSpill.dir/Attack.cpp.obj"
-  "D:/CLion/C++/RPGSpill/Druid.cpp" "D:/CLion/C++/RPGSpill/cmake-build-debug/CMakeFiles/RPGSpill.dir/Druid.cpp.obj"
-  "D:/CLion/C++/RPGSpill/GameManager.cpp" "D:/CLion/C++/RPGSpill/cmake-build-debug/CMakeFiles/RPGSpill.dir/GameManager.cpp.obj"
-  "D:/CLion/C++/RPGSpill/PlayerCharacter.cpp" "D:/CLion/C++/RPGSpill/cmake-build-debug/CMakeFiles/RPGSpill.dir/PlayerCharacter.cpp.obj"
-  "D:/CLion/C++/RPGSpill/main.cpp" "D:/CLion/C++/RPGSpill/cmake-build-debug/CMakeFiles/RPGSpill.dir/main.cpp.obj"
+  "C:/Users/simone/Documents/Kristiania/2021-0Spring/C++/RPGGame/src/Attack.cpp" "C:/Users/simone/Documents/Kristiania/2021-0Spring/C++/RPGGame/cmake-build-debug/CMakeFiles/RPGSpill.dir/src/Attack.cpp.obj"
+  "C:/Users/simone/Documents/Kristiania/2021-0Spring/C++/RPGGame/src/Druid.cpp" "C:/Users/simone/Documents/Kristiania/2021-0Spring/C++/RPGGame/cmake-build-debug/CMakeFiles/RPGSpill.dir/src/Druid.cpp.obj"
+  "C:/Users/simone/Documents/Kristiania/2021-0Spring/C++/RPGGame/src/GameManager.cpp" "C:/Users/simone/Documents/Kristiania/2021-0Spring/C++/RPGGame/cmake-build-debug/CMakeFiles/RPGSpill.dir/src/GameManager.cpp.obj"
+  "C:/Users/simone/Documents/Kristiania/2021-0Spring/C++/RPGGame/src/PlayerCharacter.cpp" "C:/Users/simone/Documents/Kristiania/2021-0Spring/C++/RPGGame/cmake-build-debug/CMakeFiles/RPGSpill.dir/src/PlayerCharacter.cpp.obj"
+  "C:/Users/simone/Documents/Kristiania/2021-0Spring/C++/RPGGame/src/main.cpp" "C:/Users/simone/Documents/Kristiania/2021-0Spring/C++/RPGGame/cmake-build-debug/CMakeFiles/RPGSpill.dir/src/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 

@@ -1,19 +1,19 @@
 #ifndef RPGSPILL_ATTACK_H
 #define RPGSPILL_ATTACK_H
 
+#include <string>
 
 class Attack {
-private:
-    std::string m_name = {};
-    int m_damage = 0;
-    int m_cooldown = 0;
 public:
+    bool isReady;
     Attack();
     Attack(std::string name, int damage, int cooldown);
     ~Attack();
     void runAttack();
-    bool isReady;
-
+private:
+    std::string m_name;
+    int m_damage;
+    int m_cooldown;
 };
 
 

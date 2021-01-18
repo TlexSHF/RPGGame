@@ -6,11 +6,19 @@
 
 #IncludeRegexTransform: 
 
-D:/CLion/C++/RPGSpill/GameManager.cpp
+C:/Users/simone/Documents/Kristiania/2021-0Spring/C++/RPGGame/include/Attack.h
+string
+-
+
+C:/Users/simone/Documents/Kristiania/2021-0Spring/C++/RPGGame/include/PlayerCharacter.h
+Attack.h
+C:/Users/simone/Documents/Kristiania/2021-0Spring/C++/RPGGame/include/Attack.h
+string
+-
+
+C:/Users/simone/Documents/Kristiania/2021-0Spring/C++/RPGGame/src/PlayerCharacter.cpp
 iostream
 -
-GameManager.h
-D:/CLion/C++/RPGSpill/GameManager.h
-
-D:/CLion/C++/RPGSpill/GameManager.h
+../include/PlayerCharacter.h
+C:/Users/simone/Documents/Kristiania/2021-0Spring/C++/RPGGame/include/PlayerCharacter.h
 
