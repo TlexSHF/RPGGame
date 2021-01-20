@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="D:/CLion/C++/RPGSpill/cmake-build-debug"/>
+				<Option working_dir="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\CLion\C++\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 all"/>
-					<CompileFile command="nmake /NOLOGO /f D:\CLion\C++\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\CLion\C++\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\CLion\C++\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="RPGSpill">
-				<Option output="D:/CLion/C++/RPGSpill/cmake-build-debug/RPGSpill.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion/C++/RPGSpill/cmake-build-debug"/>
+				<Option output="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/cmake-build-debug/RPGSpill.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
@@ -33,15 +33,15 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\CLion\C++\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 RPGSpill"/>
-					<CompileFile command="nmake /NOLOGO /f D:\CLion\C++\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\CLion\C++\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\CLion\C++\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 RPGSpill"/>
+					<CompileFile command="nmake /NOLOGO /f D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="RPGSpill/fast">
-				<Option output="D:/CLion/C++/RPGSpill/cmake-build-debug/RPGSpill.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLion/C++/RPGSpill/cmake-build-debug"/>
+				<Option output="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/cmake-build-debug/RPGSpill.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
@@ -55,61 +55,61 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\CLion\C++\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 RPGSpill/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\CLion\C++\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\CLion\C++\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\CLion\C++\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 RPGSpill/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="D:/CLion/C++/RPGSpill/cmake-build-debug"/>
+				<Option working_dir="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\CLion\C++\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
-					<CompileFile command="nmake /NOLOGO /f D:\CLion\C++\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\CLion\C++\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\CLion\C++\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="D:/CLion/C++/RPGSpill/cmake-build-debug"/>
+				<Option working_dir="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\CLion\C++\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="nmake /NOLOGO /f D:\CLion\C++\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\CLion\C++\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\CLion\C++\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/CLion/C++/RPGSpill/include/Attack.h">
+		<Unit filename="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/Attack.h">
 			<Option target="RPGSpill"/>
 		</Unit>
-		<Unit filename="D:/CLion/C++/RPGSpill/include/Druid.h">
+		<Unit filename="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/Druid.h">
 			<Option target="RPGSpill"/>
 		</Unit>
-		<Unit filename="D:/CLion/C++/RPGSpill/include/GameManager.h">
+		<Unit filename="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/GameManager.h">
 			<Option target="RPGSpill"/>
 		</Unit>
-		<Unit filename="D:/CLion/C++/RPGSpill/include/PlayerCharacter.h">
+		<Unit filename="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/PlayerCharacter.h">
 			<Option target="RPGSpill"/>
 		</Unit>
-		<Unit filename="D:/CLion/C++/RPGSpill/src/Attack.cpp">
+		<Unit filename="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/src/Attack.cpp">
 			<Option target="RPGSpill"/>
 		</Unit>
-		<Unit filename="D:/CLion/C++/RPGSpill/src/Druid.cpp">
+		<Unit filename="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/src/Druid.cpp">
 			<Option target="RPGSpill"/>
 		</Unit>
-		<Unit filename="D:/CLion/C++/RPGSpill/src/GameManager.cpp">
+		<Unit filename="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/src/GameManager.cpp">
 			<Option target="RPGSpill"/>
 		</Unit>
-		<Unit filename="D:/CLion/C++/RPGSpill/src/PlayerCharacter.cpp">
+		<Unit filename="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/src/PlayerCharacter.cpp">
 			<Option target="RPGSpill"/>
 		</Unit>
-		<Unit filename="D:/CLion/C++/RPGSpill/src/main.cpp">
+		<Unit filename="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/src/main.cpp">
 			<Option target="RPGSpill"/>
 		</Unit>
-		<Unit filename="D:/CLion/C++/RPGSpill/CMakeLists.txt">
+		<Unit filename="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

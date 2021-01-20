@@ -6,23 +6,53 @@
 
 #IncludeRegexTransform: 
 
-D:/CLion/C++/RPGSpill/include/Attack.h
+D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/Attack.h
 string
 -
 
-D:/CLion/C++/RPGSpill/include/GameManager.h
+D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/Druid.h
+iostream
+-
+
+D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/GameManager.h
+vector
+-
 PlayerCharacter.h
-D:/CLion/C++/RPGSpill/include/PlayerCharacter.h
+D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/PlayerCharacter.h
 
-D:/CLion/C++/RPGSpill/include/PlayerCharacter.h
-Attack.h
-D:/CLion/C++/RPGSpill/include/Attack.h
+D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/PlayerCharacter.h
 string
 -
+vector
+-
+Attack.h
+D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/Attack.h
 
-D:/CLion/C++/RPGSpill/src/GameManager.cpp
+D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/src/Attack.cpp
+iostream
+-
+../include/Attack.h
+D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/Attack.h
+
+D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/src/Druid.cpp
+../include/Druid.h
+D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/Druid.h
+
+D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/src/GameManager.cpp
 iostream
 -
 ../include/GameManager.h
-D:/CLion/C++/RPGSpill/include/GameManager.h
+D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/GameManager.h
+
+D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/src/PlayerCharacter.cpp
+iostream
+-
+../include/PlayerCharacter.h
+D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/PlayerCharacter.h
+
+D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/src/main.cpp
+iostream
+-
+../include/GameManager.h
+D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/GameManager.h
 

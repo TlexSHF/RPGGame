@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\CLion\C++\RPGSpill
+CMAKE_SOURCE_DIR = D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\CLion\C++\RPGSpill\cmake-build-debug
+CMAKE_BINARY_DIR = D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -84,9 +84,9 @@ rebuild_cache\fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\CLion\C++\RPGSpill\cmake-build-debug\CMakeFiles D:\CLion\C++\RPGSpill\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\CMakeFiles D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\CLion\C++\RPGSpill\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target

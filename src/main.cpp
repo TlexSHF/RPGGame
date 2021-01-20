@@ -1,10 +1,11 @@
-#include "../include/GameManager.h"
 #include <iostream>
+#include "../include/GameManager.h"
+
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
     GameManager gm;
-    gm.run();
+    gm.startGame();
 
     return 0;
 }

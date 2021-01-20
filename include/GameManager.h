@@ -1,6 +1,7 @@
 #ifndef RPGSPILL_GAMEMANAGER_H
 #define RPGSPILL_GAMEMANAGER_H
 
+#include <vector>
 #include "PlayerCharacter.h"
 
 //TODO i set a max on players, this too needs to be fixed
@@ -8,15 +9,13 @@
 
 class GameManager {
 private:
-    PlayerCharacter** m_players;
-    void round(int n);
-    void startGame();
-    PlayerCharacter* createCharacter(int nPlayer);
+    std::vector<PlayerCharacter> m_Players; //Vector
+    void runTurn(int n);
+    PlayerCharacter createCharacter(int nPlayer);
 public:
     GameManager();
     ~GameManager();
-    void run();
-
+    void startGame();
 };
 
 

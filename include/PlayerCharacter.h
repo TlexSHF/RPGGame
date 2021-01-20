@@ -1,8 +1,9 @@
 #ifndef RPGSPILL_PLAYERCHARACTER_H
 #define RPGSPILL_PLAYERCHARACTER_H
 
-#include "Attack.h"
 #include <string>
+#include <vector>
+#include "Attack.h"
 
 enum class GameClass{warrior, ranger, druid};
 
@@ -23,7 +24,7 @@ private:
     GameClass m_class;
     int m_hitPoints;
     int m_maxHP;
-    Attack** m_attacks;
+    std::vector<Attack> m_ptrAttacks;
 };
 
 

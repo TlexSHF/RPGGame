@@ -4,25 +4,35 @@
 //TODO User input validation
 // game actually only works for 2 players
 
-void GameManager::round(int n) {
+void GameManager::startGame() {
+    std::cout << "Welcome to the Game! \n"
+                 "Initializing 2 players ...\n"
+                 "----------------------------" << std::endl;
+
+    for(int i = 0; i < 2; i++) {
+        m_Players.push_back(createCharacter(i + 1));
+    }
+
+    for(int i = 0; i < 2; i++) {
+        runTurn(i + 1);
+    }
+
+}
+
+void GameManager::runTurn(int n) {
     std::cout << "Entering Arena\n"
                  "Round 1 - Stats:\n";
     for(int i = 0; i < 2; i++) {
-        std::cout << m_players[i]->getName() << ": " << m_players[i]->getHP() << '/' << m_players[i]->getMaxHP() << std::endl;
+        std::cout << m_Players.at(i).getName() << ": " << m_Players.at(i).getHP() << '/' << m_Players.at(i).getMaxHP() << std::endl;
     }
     for(int i = 0; i < 2; i++) {
-        m_players[i]->runTurn();
+        m_Players.at(i).runTurn();
     }
 }
+//TODO Problem: push_back trenger en class, men jeg returnerer en ptr - årsak til returnere en ptr: være på heap
+// For her ser man at de blir destructa igjen når vi beveger oss ut av create funksjonen
 
-void GameManager::startGame() {
-    for(int i = 0; i < 2; i++) {
-        round(i + 1);
-    }
-
-}
-
-PlayerCharacter* GameManager::createCharacter(int nPlayer) {
+PlayerCharacter GameManager::createCharacter(int nPlayer) {
     int pClass = 0;
     std::string pName = {};
 
@@ -44,19 +54,7 @@ PlayerCharacter* GameManager::createCharacter(int nPlayer) {
                 << "\n----------------------------" << std::endl;
 
     pClass--; //Converts from 'user friendly' to 'enum/computer friendly'
-    return new PlayerCharacter(pName, (GameClass)pClass);
-}
-
-void GameManager::run() {
-
-    std::cout << "Welcome to the Game! \n"
-                 "Initializing 2 players ...\n"
-                 "----------------------------" << std::endl;
-
-    for(int i = 0; i < 2; i++) {
-        m_players[i] = createCharacter(i+1);
-    }
-    startGame();
+    return PlayerCharacter(pName, (GameClass)pClass);
 }
 
 GameManager::GameManager() /*: m_players{new PlayerCharacter[2]}*/{
