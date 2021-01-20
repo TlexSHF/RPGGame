@@ -5,11 +5,12 @@
 
 class Attack {
 public:
-    bool isReady;
+    bool m_isReady;
     std::string getInfo();
     void runAttack();
-    Attack();
     Attack(std::string name, int damage, int cooldown);
+    Attack(const Attack& other);    //CopyConstructor
+    Attack(const Attack&& other);   //MoveConstructor
     ~Attack();
 
 private:

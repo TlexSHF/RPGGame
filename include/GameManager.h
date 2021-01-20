@@ -8,14 +8,14 @@
 //This class should ideally be a <<Singleton>>
 
 class GameManager {
-private:
-    std::vector<PlayerCharacter> m_Players; //Vector
-    void runTurn(int n);
-    PlayerCharacter createCharacter(int nPlayer);
 public:
     GameManager();
     ~GameManager();
     void startGame();
+private:
+    std::vector<PlayerCharacter> m_Players; //Vector
+    void runTurn(int n);
+    void createCharacter(int nPlayer);
 };
 
 
