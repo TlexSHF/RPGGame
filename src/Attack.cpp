@@ -6,8 +6,16 @@ std::string Attack::getInfo() {
     return m_name + ": damage: " + std::to_string(m_damage) + ", cooldown: " + std::to_string(m_cooldown);
 }
 
+int Attack::getDamage() {
+    return m_damage;
+}
+
 void Attack::runAttack() {
     std::cout << "Running attack" << std::endl;
+}
+
+std::ostream &operator<<(std::ostream &outStream, const Attack &atk) {
+    return outStream << atk.m_name;
 }
 
 //Constructors

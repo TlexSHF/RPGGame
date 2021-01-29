@@ -13,8 +13,8 @@ public:
     ~GameManager();
     void startGame();
 private:
-    std::vector<PlayerCharacter> m_Players; //Vector
-    void runTurn(int n);
+    std::vector<PlayerCharacter> m_players; //Vector
+    bool runTurn();
     void createCharacter(int nPlayer);
 };
 

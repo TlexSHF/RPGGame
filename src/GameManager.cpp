@@ -5,27 +5,32 @@
 // game actually only works for 2 players
 
 void GameManager::startGame() {
+    bool continueGame = true;
     std::cout << "Welcome to the Game! \n"
                  "Initializing 2 players ...\n"
                  "----------------------------" << std::endl;
     for(int i = 0; i < 2; i++) {
         createCharacter(i + 1);
     }
-    for(int i = 0; i < 2; i++) {
-        runTurn(i + 1);
+    while(continueGame) {
+        continueGame = runTurn();
     }
 }
 
-void GameManager::runTurn(int n) {
+bool GameManager::runTurn() {
+    int round = 0;
+    bool continueGame = true;
     std::cout << "Entering Arena\n"
-                 "Round 1 - Stats:\n";
-    for(PlayerCharacter pc : m_Players) {
-        std::cout << pc.getName() << ": " << pc.getHP() << '/' << pc.getMaxHP() << std::endl;
+                 "Round " << round << " - Stats:\n";
+    for(PlayerCharacter pc : m_players) {
+        std::cout << pc << ": " << pc.getHP() << '/' << pc.getMaxHP() << std::endl;
     }
 
-    for(PlayerCharacter pc : m_Players) {
-        pc.runTurn();
+    for(int i = 0; i < 2; i++) {
+        m_players[i].runTurn(m_players);
     }
+    round++;
+    return continueGame;
 }
 
 void GameManager::createCharacter(int nPlayer) {
@@ -50,7 +55,7 @@ void GameManager::createCharacter(int nPlayer) {
                 << "\n----------------------------" << std::endl;
 
     pClass--; //Converts from 'user friendly' to 'enum/computer friendly'
-    m_Players.emplace_back( pName, (GameClass)pClass);
+    m_players.emplace_back(pName, (GameClass)pClass);
 }
 
 GameManager::GameManager() {

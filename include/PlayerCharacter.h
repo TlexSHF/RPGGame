@@ -9,20 +9,21 @@ enum class GameClass{warrior, ranger, druid};
 
 class PlayerCharacter {
 public:
-    void runTurn();
-    void attack();
-    PlayerCharacter(std::string& name, GameClass gameClass);
-    std::string getName();
-    GameClass getClass();
+    void runTurn(std::vector<PlayerCharacter> pcs);
+    void subtractHP(int amount);
+    friend std::ostream& operator<<(std::ostream& outStream, const PlayerCharacter& pc);
     int getHP();
     int getMaxHP();
+    PlayerCharacter(std::string& name, GameClass gameClass);
     ~PlayerCharacter();
 private:
     std::string m_name;
     GameClass m_class;
     int m_hitPoints;
     int m_maxHP;
-    std::vector<Attack> m_Attacks;
+    std::vector<Attack> m_attacks;
+
+    void attack(PlayerCharacter& pc, Attack atk);
 };
 
 
