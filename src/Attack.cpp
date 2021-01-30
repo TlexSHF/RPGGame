@@ -10,10 +10,6 @@ int Attack::getDamage() {
     return m_damage;
 }
 
-void Attack::runAttack() {
-    std::cout << "Running attack" << std::endl;
-}
-
 std::ostream &operator<<(std::ostream &outStream, const Attack &atk) {
     return outStream << atk.m_name;
 }

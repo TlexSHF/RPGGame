@@ -9,7 +9,7 @@ enum class GameClass{warrior, ranger, druid};
 
 class PlayerCharacter {
 public:
-    void runTurn(std::vector<PlayerCharacter> pcs);
+    void runTurn(std::vector<PlayerCharacter> &pcs);
     void subtractHP(int amount);
     friend std::ostream& operator<<(std::ostream& outStream, const PlayerCharacter& pc);
     int getHP();
@@ -23,7 +23,7 @@ private:
     int m_maxHP;
     std::vector<Attack> m_attacks;
 
-    void attack(PlayerCharacter& pc, Attack atk);
+    void attack(PlayerCharacter &pc, Attack &atk);
 };
 
 

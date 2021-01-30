@@ -12,22 +12,30 @@ void GameManager::startGame() {
     for(int i = 0; i < 2; i++) {
         createCharacter(i + 1);
     }
+    std::cout << "Entering Arena...\n";
     while(continueGame) {
         continueGame = runTurn();
     }
 }
 
 bool GameManager::runTurn() {
-    int round = 0;
+    static int round = 1;
     bool continueGame = true;
-    std::cout << "Entering Arena\n"
+    std::cout << "\n"
                  "Round " << round << " - Stats:\n";
     for(PlayerCharacter pc : m_players) {
         std::cout << pc << ": " << pc.getHP() << '/' << pc.getMaxHP() << std::endl;
     }
 
-    for(int i = 0; i < 2; i++) {
+    int pcSize = m_players.size();
+    for(int i = 0; i < pcSize; i++) {
         m_players[i].runTurn(m_players);
+        for(int j = 0; j < pcSize; j++) {
+            if(m_players[j].getHP() <= 0) {
+                std::cout << m_players[j] << " died." << std::endl;
+                continueGame = false;
+            }
+        }
     }
     round++;
     return continueGame;
