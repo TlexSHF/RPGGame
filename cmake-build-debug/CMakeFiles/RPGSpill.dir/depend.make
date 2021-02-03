@@ -4,20 +4,23 @@
 CMakeFiles\RPGSpill.dir\src\Attack.cpp.obj: ..\include\Attack.h
 CMakeFiles\RPGSpill.dir\src\Attack.cpp.obj: ..\src\Attack.cpp
 
-CMakeFiles\RPGSpill.dir\src\Druid.cpp.obj: ..\include\Druid.h
-CMakeFiles\RPGSpill.dir\src\Druid.cpp.obj: ..\src\Druid.cpp
-
 CMakeFiles\RPGSpill.dir\src\GameManager.cpp.obj: ..\include\Attack.h
 CMakeFiles\RPGSpill.dir\src\GameManager.cpp.obj: ..\include\GameManager.h
+CMakeFiles\RPGSpill.dir\src\GameManager.cpp.obj: ..\include\HP.h
 CMakeFiles\RPGSpill.dir\src\GameManager.cpp.obj: ..\include\PlayerCharacter.h
 CMakeFiles\RPGSpill.dir\src\GameManager.cpp.obj: ..\src\GameManager.cpp
 
+CMakeFiles\RPGSpill.dir\src\HP.cpp.obj: ..\include\HP.h
+CMakeFiles\RPGSpill.dir\src\HP.cpp.obj: ..\src\HP.cpp
+
 CMakeFiles\RPGSpill.dir\src\PlayerCharacter.cpp.obj: ..\include\Attack.h
+CMakeFiles\RPGSpill.dir\src\PlayerCharacter.cpp.obj: ..\include\HP.h
 CMakeFiles\RPGSpill.dir\src\PlayerCharacter.cpp.obj: ..\include\PlayerCharacter.h
 CMakeFiles\RPGSpill.dir\src\PlayerCharacter.cpp.obj: ..\src\PlayerCharacter.cpp
 
 CMakeFiles\RPGSpill.dir\src\main.cpp.obj: ..\include\Attack.h
 CMakeFiles\RPGSpill.dir\src\main.cpp.obj: ..\include\GameManager.h
+CMakeFiles\RPGSpill.dir\src\main.cpp.obj: ..\include\HP.h
 CMakeFiles\RPGSpill.dir\src\main.cpp.obj: ..\include\PlayerCharacter.h
 CMakeFiles\RPGSpill.dir\src\main.cpp.obj: ..\src\main.cpp
 

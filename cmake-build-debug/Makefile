@@ -154,33 +154,6 @@ src\Attack.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\src\Attack.cpp.s
 .PHONY : src\Attack.cpp.s
 
-src\Druid.obj: src\Druid.cpp.obj
-
-.PHONY : src\Druid.obj
-
-# target to build an object file
-src\Druid.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\src\Druid.cpp.obj
-.PHONY : src\Druid.cpp.obj
-
-src\Druid.i: src\Druid.cpp.i
-
-.PHONY : src\Druid.i
-
-# target to preprocess a source file
-src\Druid.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\src\Druid.cpp.i
-.PHONY : src\Druid.cpp.i
-
-src\Druid.s: src\Druid.cpp.s
-
-.PHONY : src\Druid.s
-
-# target to generate assembly for a file
-src\Druid.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\src\Druid.cpp.s
-.PHONY : src\Druid.cpp.s
-
 src\GameManager.obj: src\GameManager.cpp.obj
 
 .PHONY : src\GameManager.obj
@@ -207,6 +180,33 @@ src\GameManager.s: src\GameManager.cpp.s
 src\GameManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\src\GameManager.cpp.s
 .PHONY : src\GameManager.cpp.s
+
+src\HP.obj: src\HP.cpp.obj
+
+.PHONY : src\HP.obj
+
+# target to build an object file
+src\HP.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\src\HP.cpp.obj
+.PHONY : src\HP.cpp.obj
+
+src\HP.i: src\HP.cpp.i
+
+.PHONY : src\HP.i
+
+# target to preprocess a source file
+src\HP.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\src\HP.cpp.i
+.PHONY : src\HP.cpp.i
+
+src\HP.s: src\HP.cpp.s
+
+.PHONY : src\HP.s
+
+# target to generate assembly for a file
+src\HP.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RPGSpill.dir\src\HP.cpp.s
+.PHONY : src\HP.cpp.s
 
 src\PlayerCharacter.obj: src\PlayerCharacter.cpp.obj
 
@@ -274,12 +274,12 @@ help:
 	@echo ... src/Attack.obj
 	@echo ... src/Attack.i
 	@echo ... src/Attack.s
-	@echo ... src/Druid.obj
-	@echo ... src/Druid.i
-	@echo ... src/Druid.s
 	@echo ... src/GameManager.obj
 	@echo ... src/GameManager.i
 	@echo ... src/GameManager.s
+	@echo ... src/HP.obj
+	@echo ... src/HP.i
+	@echo ... src/HP.s
 	@echo ... src/PlayerCharacter.obj
 	@echo ... src/PlayerCharacter.i
 	@echo ... src/PlayerCharacter.s

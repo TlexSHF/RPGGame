@@ -1,6 +1,6 @@
 #include <iostream>
 #include "../include/GameManager.h"
-
+#include "../include/HP.h"
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
@@ -9,3 +9,7 @@ int main() {
 
     return 0;
 }
+
+
+
+

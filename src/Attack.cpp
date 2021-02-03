@@ -10,7 +10,7 @@ int Attack::getDamage() {
     return m_damage;
 }
 
-std::ostream &operator<<(std::ostream &outStream, const Attack &atk) {
+std::ostream& operator<<(std::ostream& outStream, const Attack& atk) {
     return outStream << atk.m_name;
 }
 
@@ -27,7 +27,7 @@ Attack::Attack(const Attack& other) :
     //std::cout << "Copying " << m_name << std::endl;
 };
 //MoveConstructor
-Attack::Attack(const Attack &&other) :
+Attack::Attack(const Attack&& other) :
         m_name(other.m_name), m_damage(other.m_damage), m_cooldown(other.m_cooldown), m_isReady(other.m_isReady) {
 }
 

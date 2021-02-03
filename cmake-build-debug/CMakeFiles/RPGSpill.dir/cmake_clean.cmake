@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/RPGSpill.dir/src/Attack.cpp.obj"
-  "CMakeFiles/RPGSpill.dir/src/Druid.cpp.obj"
   "CMakeFiles/RPGSpill.dir/src/GameManager.cpp.obj"
+  "CMakeFiles/RPGSpill.dir/src/HP.cpp.obj"
   "CMakeFiles/RPGSpill.dir/src/PlayerCharacter.cpp.obj"
   "CMakeFiles/RPGSpill.dir/src/main.cpp.obj"
   "RPGSpill.exe"
