@@ -1,6 +1,8 @@
 #include <iostream>
 #include "../include/GameManager.h"
 
+bool debugBoolean = false;
+
 //TODO User input validation
 // game actually only works for 2 players
 
@@ -19,7 +21,7 @@ void GameManager::startGame() {
         continueGame = runTurn();
     }
 }
-
+//TODO There are one HP that is being deleted at wrong time. It happens inside the "createCharacter"
 bool GameManager::runTurn() {
     static int round = 1;
     bool continueGame = true;
@@ -50,14 +52,14 @@ void GameManager::createCharacter(int nPlayer) {
     std::string pName = {};
 
     std::cout << "Player Classes:\n"
-                 "   1 - Warrior\n   2 - Ranger\n   3 - Druid\n"
+                 "   0 - Warrior\n   1 - Ranger\n   2 - Druid\n"
                  "Pick player " << nPlayer << "'s class:";
     std::cin >> pClass;
-    if (pClass == 1) {
+    if (pClass == 0) {
         std::cout << "You chose Warrior!" << std::endl;
-    } else if (pClass == 2) {
+    } else if (pClass == 1) {
         std::cout << "You chose Ranger!" << std::endl;
-    } else if(pClass == 3) {
+    } else if(pClass == 2) {
         std::cout << "You chose Druid!" << std::endl;
     } else {
         std::cout << "Invalid class choice" << std::endl;
@@ -66,16 +68,18 @@ void GameManager::createCharacter(int nPlayer) {
     std::cout << "Hello " << pName
             << "\n----------------------------" << std::endl;
 
-    pClass--; //Converts from 'user friendly' to 'enum/computer friendly'
     m_players.emplace_back(pName, (GameClass)pClass);
 }
 
 GameManager::GameManager() {
-    //std::cout << "Constructing GameManager" << std::endl;
+    if(debugBoolean) {
+        std::cout << ">>>> constructing GameManager" << std::endl;
+    }
 }
-
 GameManager::~GameManager() {
-    //std::cout << "Destructing GameManager" << std::endl;
+    if(debugBoolean) {
+        std::cout << ">>>> destructing GameManager" << std::endl;
+    }
 }
 
 

@@ -6,12 +6,16 @@
 #include "Attack.h"
 #include "HP.h"
 
+extern bool debugBoolean;
+
 enum class GameClass{warrior, ranger, druid};
 
 class PlayerCharacter {
 public:
     PlayerCharacter(std::string& name, GameClass gameClass);
+    PlayerCharacter(const PlayerCharacter& other);    //CopyConstructor
     ~PlayerCharacter();
+
     void runTurn(std::vector<PlayerCharacter>& pcs);
 
     /* Operator overloading */
@@ -25,7 +29,7 @@ public:
 private:
     std::string m_name;
     GameClass m_class;
-    HP* m_hitPoints;
+    HP m_hitPoints;
     std::vector<Attack> m_attacks;
 
     void attack(PlayerCharacter& pc, Attack& atk);

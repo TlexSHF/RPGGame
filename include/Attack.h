@@ -3,6 +3,8 @@
 
 #include <string>
 
+extern bool debugBoolean;
+
 class Attack {
 public:
     bool m_isReady;

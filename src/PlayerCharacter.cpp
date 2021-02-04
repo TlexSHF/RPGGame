@@ -6,25 +6,26 @@
 
 /* Constructor */
 PlayerCharacter::PlayerCharacter(std::string &name, GameClass gameClass)
-        : m_name(name), m_class(gameClass) {
+        : m_name(name), m_class(gameClass), m_hitPoints() {
+
     if (gameClass == GameClass::warrior) {
         std::cout << "Constructing warrior...\n"
                      "Warriors have a natural Health of 100 HP, and an Armor Class of 20 AC" << std::endl;
-        m_hitPoints = new HP(100, 20);
+        m_hitPoints = HP(100, 20);
         m_attacks.emplace_back("Slash", 20, 10);
         m_attacks.emplace_back("Cling", 40, 30);
 
     } else if (gameClass == GameClass::ranger) {
         std::cout << "Constructing ranger...\n"
                      "Rangers have a natural Health of 120 HP, and an Armor Class of 10 AC" << std::endl;
-        m_hitPoints = new HP(120, 10);
+        m_hitPoints = HP(120, 10);
         m_attacks.emplace_back("Shoot", 10, 2);
         m_attacks.emplace_back("Fire Arrow", 30, 15);
 
     } else if (gameClass == GameClass::druid) {
         std::cout << "Constructing druid...\n"
-                     "Druids have a natural Health of 160 HP, and an Armor Class of 5p" << std::endl;
-        m_hitPoints = new HP(160, 5);
+                     "Druids have a natural Health of 160 HP, and an Armor Class of 5 AC" << std::endl;
+        m_hitPoints = HP(160, 5);
         m_attacks.emplace_back("Cat Claw", 15, 5);
         m_attacks.emplace_back("Bear Stomp", 50, 20);
     } else {
@@ -33,10 +34,19 @@ PlayerCharacter::PlayerCharacter(std::string &name, GameClass gameClass)
     std::cout << "----------------------------" << std::endl;
 }
 
+/* Copy constructor */
+PlayerCharacter::PlayerCharacter(const PlayerCharacter &other) :
+    m_name(other.m_name), m_class(other.m_class), m_hitPoints(other.m_hitPoints), m_attacks(other.m_attacks) {
+    if(debugBoolean) {
+        std::cout << ">>>> copying PlayerCharacter" << std::endl;
+    }
+}
+
 /* Destructor */
 PlayerCharacter::~PlayerCharacter() {
-    //std::cout << "Destructing PlayerCharacter" << std::endl;
-    delete m_hitPoints;
+    if(debugBoolean) {
+        std::cout << ">>>> destructing PlayerCharacter" << std::endl;
+    }
 }
 
 /* Actions */
@@ -61,7 +71,7 @@ void PlayerCharacter::runTurn(std::vector<PlayerCharacter>& pcs) {
 
 /* Operator overloading */
 int PlayerCharacter::operator-=(int amount) {
-    return *m_hitPoints -= amount;
+    return m_hitPoints -= amount;
 }
 std::ostream &operator<<(std::ostream &outStream, const PlayerCharacter &pc) {
     return outStream << pc.m_name;
@@ -69,7 +79,7 @@ std::ostream &operator<<(std::ostream &outStream, const PlayerCharacter &pc) {
 
 /* Getters */
 int PlayerCharacter::getHP() {
-    return m_hitPoints->getHP();
+    return m_hitPoints.getHP();
 }
 
 std::string PlayerCharacter::getClass() const {

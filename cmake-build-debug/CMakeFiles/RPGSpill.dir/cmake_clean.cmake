@@ -6,8 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/RPGSpill.dir/src/main.cpp.obj"
   "RPGSpill.exe"
   "RPGSpill.exe.manifest"
-  "RPGSpill.lib"
   "RPGSpill.pdb"
+  "libRPGSpill.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

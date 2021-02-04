@@ -4,6 +4,8 @@
 #include <vector>
 #include "PlayerCharacter.h"
 
+extern bool debugBoolean;
+
 //TODO i set a max on players, this too needs to be fixed
 //This class should ideally be a <<Singleton>>
 
@@ -13,7 +15,7 @@ public:
     ~GameManager();
     void startGame();
 private:
-    std::vector<PlayerCharacter> m_players; //Vector
+    std::vector<PlayerCharacter> m_players;
     bool runTurn();
     void createCharacter(int nPlayer);
 };

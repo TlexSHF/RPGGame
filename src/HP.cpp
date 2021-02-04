@@ -1,17 +1,33 @@
 #include "../include/HP.h"
 
-/* Constructor */
-//HP::HP() : m_maxHP(0), m_hitPoints(0), m_armorPoints(0) {}
-HP::HP(int HP, int AC) : m_hitPoints(HP), m_maxHP(HP), m_armorPoints(AC) {}
+/* Constructors */
+HP::HP() : m_maxHP(0), m_hitPoints(0), m_armorPoints(0) {
+    if(debugBoolean) {
+        std::cout << ">>>> default constructing HP" << std::endl;
+    }
+}
+HP::HP(int HP, int AC) : m_hitPoints(HP), m_maxHP(HP), m_armorPoints(AC) {
+    if(debugBoolean) {
+        std::cout << ">>>> constructing HP" << std::endl;
+    }
+}
+HP::HP(const HP &other) : m_maxHP(other.m_hitPoints), m_hitPoints(other.m_hitPoints), m_armorPoints(other.m_armorPoints) {
+    if(debugBoolean) {
+        std::cout << ">>>> copying HP" << std::endl;
+    }
+}
+HP::~HP() {
+    if(debugBoolean) {
+        std::cout << ">>>> destructing HP" << std::endl;
+    }
+}
 
 /* Changing HP */
 int HP::operator-=(int dmg) {
     //cannot go lower than 0 -- ac subtracted from damage
     if(m_hitPoints - (dmg - m_armorPoints) < 0) {
-        std::cout << ">>>> " << m_hitPoints << " - (" << dmg << " - " << m_armorPoints << ") < 0\n";
         m_hitPoints = 0;
     } else {
-        std::cout << ">>>> " << m_hitPoints << " - (" << dmg << " - " << m_armorPoints << ") >= 0\n";
         m_hitPoints -= (dmg - m_armorPoints);
     }
     return m_hitPoints;

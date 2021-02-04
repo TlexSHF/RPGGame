@@ -3,10 +3,14 @@
 
 #include <iostream>
 
+extern bool debugBoolean;
+
 class HP {
 public:
-    //HP();
+    HP();
     HP(int HP, int AC);
+    HP(const HP& other);    //CopyConstructor
+    ~HP();
 
     /* Changing HP */
     int operator-=(int dmg); //DAMAGE: damage - AC. HP - restDmg (AC is subtracted first)
@@ -41,6 +45,9 @@ public:
 
     /* Getter */
     int getHP() const;
+
+    /* Setters */
+
 
 private:
     int m_maxHP;
