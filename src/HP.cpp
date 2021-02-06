@@ -25,10 +25,14 @@ HP::~HP() {
 /* Changing HP */
 int HP::operator-=(int dmg) {
     //cannot go lower than 0 -- ac subtracted from damage
-    if(m_hitPoints - (dmg - m_armorPoints) < 0) {
+    int damage = dmg - m_armorPoints;
+
+    std::cout << "With an AC of " << m_armorPoints << ", " << damage << " damage was taken" << std::endl;
+
+    if(m_hitPoints - damage < 0) {
         m_hitPoints = 0;
     } else {
-        m_hitPoints -= (dmg - m_armorPoints);
+        m_hitPoints -= damage;
     }
     return m_hitPoints;
 }

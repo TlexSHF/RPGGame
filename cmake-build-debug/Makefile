@@ -169,6 +169,33 @@ src/Attack.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make CMakeFiles/RPGSpill.dir/src/Attack.cpp.s
 .PHONY : src/Attack.cpp.s
 
+src/Character.obj: src/Character.cpp.obj
+
+.PHONY : src/Character.obj
+
+# target to build an object file
+src/Character.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make CMakeFiles/RPGSpill.dir/src/Character.cpp.obj
+.PHONY : src/Character.cpp.obj
+
+src/Character.i: src/Character.cpp.i
+
+.PHONY : src/Character.i
+
+# target to preprocess a source file
+src/Character.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make CMakeFiles/RPGSpill.dir/src/Character.cpp.i
+.PHONY : src/Character.cpp.i
+
+src/Character.s: src/Character.cpp.s
+
+.PHONY : src/Character.s
+
+# target to generate assembly for a file
+src/Character.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make CMakeFiles/RPGSpill.dir/src/Character.cpp.s
+.PHONY : src/Character.cpp.s
+
 src/GameManager.obj: src/GameManager.cpp.obj
 
 .PHONY : src/GameManager.obj
@@ -289,6 +316,9 @@ help:
 	@echo ... src/Attack.obj
 	@echo ... src/Attack.i
 	@echo ... src/Attack.s
+	@echo ... src/Character.obj
+	@echo ... src/Character.i
+	@echo ... src/Character.s
 	@echo ... src/GameManager.obj
 	@echo ... src/GameManager.i
 	@echo ... src/GameManager.s

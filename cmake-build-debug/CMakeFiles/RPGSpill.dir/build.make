@@ -89,18 +89,18 @@ CMakeFiles/RPGSpill.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RPGSpill.dir/src/main.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\src\main.cpp -o CMakeFiles\RPGSpill.dir\src\main.cpp.s
 
-CMakeFiles/RPGSpill.dir/src/PlayerCharacter.cpp.obj: CMakeFiles/RPGSpill.dir/flags.make
-CMakeFiles/RPGSpill.dir/src/PlayerCharacter.cpp.obj: ../src/PlayerCharacter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RPGSpill.dir/src/PlayerCharacter.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RPGSpill.dir\src\PlayerCharacter.cpp.obj -c D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\src\PlayerCharacter.cpp
+CMakeFiles/RPGSpill.dir/src/Character.cpp.obj: CMakeFiles/RPGSpill.dir/flags.make
+CMakeFiles/RPGSpill.dir/src/Character.cpp.obj: ../src/Character.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RPGSpill.dir/src/Character.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RPGSpill.dir\src\Character.cpp.obj -c D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\src\Character.cpp
 
-CMakeFiles/RPGSpill.dir/src/PlayerCharacter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RPGSpill.dir/src/PlayerCharacter.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\src\PlayerCharacter.cpp > CMakeFiles\RPGSpill.dir\src\PlayerCharacter.cpp.i
+CMakeFiles/RPGSpill.dir/src/Character.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RPGSpill.dir/src/Character.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\src\Character.cpp > CMakeFiles\RPGSpill.dir\src\Character.cpp.i
 
-CMakeFiles/RPGSpill.dir/src/PlayerCharacter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RPGSpill.dir/src/PlayerCharacter.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\src\PlayerCharacter.cpp -o CMakeFiles\RPGSpill.dir\src\PlayerCharacter.cpp.s
+CMakeFiles/RPGSpill.dir/src/Character.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RPGSpill.dir/src/Character.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\src\Character.cpp -o CMakeFiles\RPGSpill.dir\src\Character.cpp.s
 
 CMakeFiles/RPGSpill.dir/src/Attack.cpp.obj: CMakeFiles/RPGSpill.dir/flags.make
 CMakeFiles/RPGSpill.dir/src/Attack.cpp.obj: ../src/Attack.cpp
@@ -141,27 +141,42 @@ CMakeFiles/RPGSpill.dir/src/HP.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RPGSpill.dir/src/HP.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\src\HP.cpp -o CMakeFiles\RPGSpill.dir\src\HP.cpp.s
 
+CMakeFiles/RPGSpill.dir/src/PlayerCharacter.cpp.obj: CMakeFiles/RPGSpill.dir/flags.make
+CMakeFiles/RPGSpill.dir/src/PlayerCharacter.cpp.obj: ../src/PlayerCharacter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RPGSpill.dir/src/PlayerCharacter.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RPGSpill.dir\src\PlayerCharacter.cpp.obj -c D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\src\PlayerCharacter.cpp
+
+CMakeFiles/RPGSpill.dir/src/PlayerCharacter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RPGSpill.dir/src/PlayerCharacter.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\src\PlayerCharacter.cpp > CMakeFiles\RPGSpill.dir\src\PlayerCharacter.cpp.i
+
+CMakeFiles/RPGSpill.dir/src/PlayerCharacter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RPGSpill.dir/src/PlayerCharacter.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\src\PlayerCharacter.cpp -o CMakeFiles\RPGSpill.dir\src\PlayerCharacter.cpp.s
+
 # Object files for target RPGSpill
 RPGSpill_OBJECTS = \
 "CMakeFiles/RPGSpill.dir/src/main.cpp.obj" \
-"CMakeFiles/RPGSpill.dir/src/PlayerCharacter.cpp.obj" \
+"CMakeFiles/RPGSpill.dir/src/Character.cpp.obj" \
 "CMakeFiles/RPGSpill.dir/src/Attack.cpp.obj" \
 "CMakeFiles/RPGSpill.dir/src/GameManager.cpp.obj" \
-"CMakeFiles/RPGSpill.dir/src/HP.cpp.obj"
+"CMakeFiles/RPGSpill.dir/src/HP.cpp.obj" \
+"CMakeFiles/RPGSpill.dir/src/PlayerCharacter.cpp.obj"
 
 # External object files for target RPGSpill
 RPGSpill_EXTERNAL_OBJECTS =
 
 RPGSpill.exe: CMakeFiles/RPGSpill.dir/src/main.cpp.obj
-RPGSpill.exe: CMakeFiles/RPGSpill.dir/src/PlayerCharacter.cpp.obj
+RPGSpill.exe: CMakeFiles/RPGSpill.dir/src/Character.cpp.obj
 RPGSpill.exe: CMakeFiles/RPGSpill.dir/src/Attack.cpp.obj
 RPGSpill.exe: CMakeFiles/RPGSpill.dir/src/GameManager.cpp.obj
 RPGSpill.exe: CMakeFiles/RPGSpill.dir/src/HP.cpp.obj
+RPGSpill.exe: CMakeFiles/RPGSpill.dir/src/PlayerCharacter.cpp.obj
 RPGSpill.exe: CMakeFiles/RPGSpill.dir/build.make
 RPGSpill.exe: CMakeFiles/RPGSpill.dir/linklibs.rsp
 RPGSpill.exe: CMakeFiles/RPGSpill.dir/objects1.rsp
 RPGSpill.exe: CMakeFiles/RPGSpill.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable RPGSpill.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable RPGSpill.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\RPGSpill.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

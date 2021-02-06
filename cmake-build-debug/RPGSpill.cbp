@@ -83,6 +83,9 @@
 		<Unit filename="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/Attack.h">
 			<Option target="RPGSpill"/>
 		</Unit>
+		<Unit filename="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/Character.h">
+			<Option target="RPGSpill"/>
+		</Unit>
 		<Unit filename="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/GameManager.h">
 			<Option target="RPGSpill"/>
 		</Unit>
@@ -93,6 +96,9 @@
 			<Option target="RPGSpill"/>
 		</Unit>
 		<Unit filename="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/src/Attack.cpp">
+			<Option target="RPGSpill"/>
+		</Unit>
+		<Unit filename="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/src/Character.cpp">
 			<Option target="RPGSpill"/>
 		</Unit>
 		<Unit filename="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/src/GameManager.cpp">

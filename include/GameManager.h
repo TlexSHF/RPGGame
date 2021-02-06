@@ -2,7 +2,7 @@
 #define RPGSPILL_GAMEMANAGER_H
 
 #include <vector>
-#include "PlayerCharacter.h"
+#include "Character.h"
 
 extern bool debugBoolean;
 
@@ -15,7 +15,7 @@ public:
     ~GameManager();
     void startGame();
 private:
-    std::vector<PlayerCharacter> m_players;
+    std::vector<Character> m_players;
     bool runTurn();
     void createCharacter(int nPlayer);
 };

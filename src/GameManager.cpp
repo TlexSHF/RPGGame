@@ -1,5 +1,6 @@
 #include <iostream>
 #include "../include/GameManager.h"
+#include "../include/PlayerCharacter.h"
 
 bool debugBoolean = false;
 
@@ -27,12 +28,19 @@ bool GameManager::runTurn() {
     bool continueGame = true;
     //Print stats
     std::cout << "----------------------------\n"
-                 "Round " << round << " - Stats:\n";
-    for(PlayerCharacter pc : m_players) {
-        std::cout << pc << " the " << pc.getClass() << ": " << pc.getHP() << " HP" << std::endl;
-    }
+                 "Round " << round << std::endl;
     int pcSize = m_players.size();
     for(int i = 0; i < pcSize; i++) {
+        std::cout << " - Stats:\n";
+        for(int k = 0; k < pcSize; k++) {
+            std::cout << m_players[k] << " the " << m_players[k].getClass()
+                        << ": " << m_players[k].getHP() << " HP" << std::endl;
+        }
+
+        //TODO This is where all goes wrong
+        // because: Character.runTurn is virtual
+        // however: PlayerCharacter.runTurn is implemented
+        // some say: Array m_players should be of pointers
         m_players[i].runTurn(m_players);
 
         for(int j = 0; j < pcSize; j++) {
@@ -68,7 +76,7 @@ void GameManager::createCharacter(int nPlayer) {
     std::cout << "Hello " << pName
             << "\n----------------------------" << std::endl;
 
-    m_players.emplace_back(pName, (GameClass)pClass);
+    m_players.push_back(PlayerCharacter(pName, (GameClass)pClass));
 }
 
 GameManager::GameManager() {

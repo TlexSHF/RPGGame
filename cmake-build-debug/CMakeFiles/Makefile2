@@ -93,12 +93,12 @@ clean: CMakeFiles/RPGSpill.dir/clean
 CMakeFiles/RPGSpill.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make CMakeFiles/RPGSpill.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make CMakeFiles/RPGSpill.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target RPGSpill"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target RPGSpill"
 .PHONY : CMakeFiles/RPGSpill.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RPGSpill.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/RPGSpill.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\KRISTANIA\2021-0Spring\C++\Projects\RPGSpill\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/RPGSpill.dir/rule
