@@ -8,13 +8,16 @@ extern bool debugBoolean;
 class HP {
 public:
     HP();
-    HP(int HP, int AC);
+    HP(unsigned HP, unsigned AC);
     HP(const HP& other);    //CopyConstructor
     ~HP();
 
     /* Changing HP */
-    int operator-=(int dmg); //DAMAGE: damage - AC. HP - restDmg (AC is subtracted first)
-    int operator+=(int heal); //HEALING: heals the HP for max the start amount
+    unsigned operator-=(int dmg); //DAMAGE: damage - AC. HP - restDmg (AC is subtracted first)
+    unsigned operator+=(unsigned heal); //HEALING: heals the HP for max the start amount
+
+    /* Getter */
+    unsigned getHP() const;
 
     /* Comparing with int */
     //All operators that take two parameters must be 'friends' to gain access correctly
@@ -43,10 +46,6 @@ public:
     /* Ostream */
     friend std::ostream& operator<<(std::ostream& out, const HP& hp);
 
-    /* Getter */
-    int getHP() const;
-
-    /* Setters */
 
 
 private:

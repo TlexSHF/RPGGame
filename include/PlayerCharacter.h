@@ -5,11 +5,11 @@
 
 class PlayerCharacter : public Character{
 public:
-    PlayerCharacter(std::string& name, GameClass gameClass);
+    PlayerCharacter(std::string& name, GameClass gameClass, PlayerType playerType);
     PlayerCharacter(const Character& other);    //CopyConstructor
     ~PlayerCharacter();
 
-    void runTurn(std::vector<Character> &pcs) override;
+    void runTurn(std::vector<Character*> &pcs) override;
 };
 
 

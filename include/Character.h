@@ -8,31 +8,34 @@
 
 extern bool debugBoolean;
 
-enum class GameClass{warrior, ranger, druid};
+enum class GameClass : uint8_t{warrior, ranger, druid};
+enum class PlayerType : uint8_t {PC, NPC};
 
 class Character {
 public:
-    Character(std::string& name, GameClass gameClass);
+    Character(std::string& name, GameClass gameClass, PlayerType);
     Character(const Character& other);    //CopyConstructor
-    ~Character();
+    virtual ~Character();
 
-    virtual void runTurn(std::vector<Character>& pcs) = 0;
+    virtual void runTurn(std::vector<Character*>& pcs) = 0;
 
     /* Operator overloading */
-    int operator-=(int amount);
+    unsigned operator-=(unsigned amount);
     friend std::ostream& operator<<(std::ostream& outStream, const Character& pc);
 
     /* Getters */
-    int getHP();
+    unsigned getHP();
     std::string getClass() const;
+    PlayerType getPlayerType();
 
 protected:
     std::string m_name;
     GameClass m_class;
     HP m_hitPoints;
     std::vector<Attack> m_attacks;
+    PlayerType m_playerType;
 
-    void attack(Character& pc, Attack& atk);
+    void attack(Character& player, Attack& atk);
 };
 
 

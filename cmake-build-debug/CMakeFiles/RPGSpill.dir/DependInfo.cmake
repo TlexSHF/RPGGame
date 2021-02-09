@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/src/Character.cpp" "D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/cmake-build-debug/CMakeFiles/RPGSpill.dir/src/Character.cpp.obj"
   "D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/src/GameManager.cpp" "D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/cmake-build-debug/CMakeFiles/RPGSpill.dir/src/GameManager.cpp.obj"
   "D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/src/HP.cpp" "D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/cmake-build-debug/CMakeFiles/RPGSpill.dir/src/HP.cpp.obj"
+  "D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/src/NonPlayableCharacter.cpp" "D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/cmake-build-debug/CMakeFiles/RPGSpill.dir/src/NonPlayableCharacter.cpp.obj"
   "D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/src/PlayerCharacter.cpp" "D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/cmake-build-debug/CMakeFiles/RPGSpill.dir/src/PlayerCharacter.cpp.obj"
   "D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/src/main.cpp" "D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/cmake-build-debug/CMakeFiles/RPGSpill.dir/src/main.cpp.obj"
   )

@@ -5,8 +5,8 @@
 // Druid should have healing abilities
 
 /* Constructor */
-Character::Character(std::string &name, GameClass gameClass)
-        : m_name(name), m_class(gameClass), m_hitPoints() {
+Character::Character(std::string &name, GameClass gameClass, PlayerType playerType)
+        : m_name(name), m_class(gameClass), m_hitPoints(), m_attacks(), m_playerType(playerType) {
 
     if (gameClass == GameClass::warrior) {
         std::cout << "Constructing warrior...\n"
@@ -36,7 +36,8 @@ Character::Character(std::string &name, GameClass gameClass)
 
 /* Copy constructor */
 Character::Character(const Character &other) :
-    m_name(other.m_name), m_class(other.m_class), m_hitPoints(other.m_hitPoints), m_attacks(other.m_attacks) {
+    m_name(other.m_name), m_class(other.m_class), m_hitPoints(other.m_hitPoints),
+    m_attacks(other.m_attacks), m_playerType(other.m_playerType) {
     if(debugBoolean) {
         std::cout << ">>>> copying Character" << std::endl;
     }
@@ -51,15 +52,15 @@ Character::~Character() {
 
 
 /* Operator overloading */
-int Character::operator-=(int amount) {
+unsigned Character::operator-=(unsigned amount) {
     return m_hitPoints -= amount;
 }
-std::ostream &operator<<(std::ostream &outStream, const Character &pc) {
-    return outStream << pc.m_name;
+std::ostream &operator<<(std::ostream &outStream, const Character &player) {
+    return outStream << player.m_name;
 }
 
 /* Getters */
-int Character::getHP() {
+unsigned Character::getHP() {
     return m_hitPoints.getHP();
 }
 
@@ -75,9 +76,13 @@ std::string Character::getClass() const {
     }
 }
 
-/* Private */
-void Character::attack(Character &pc, Attack &atk) {
+PlayerType Character::getPlayerType() {
+    return m_playerType;
+}
 
-    std::cout << m_name << " " << atk << "ed " << pc << std::endl;
-    pc-=atk.getDamage();
+/* Protected */
+void Character::attack(Character& player, Attack& atk) {
+
+    std::cout << m_name << " " << atk << "ed " << player << std::endl;
+    player-=atk.getDamage();
 }

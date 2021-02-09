@@ -4,6 +4,7 @@
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
+    srand(time_t(NULL));
     GameManager gm;
     gm.startGame();
 

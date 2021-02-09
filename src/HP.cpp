@@ -6,7 +6,7 @@ HP::HP() : m_maxHP(0), m_hitPoints(0), m_armorPoints(0) {
         std::cout << ">>>> default constructing HP" << std::endl;
     }
 }
-HP::HP(int HP, int AC) : m_hitPoints(HP), m_maxHP(HP), m_armorPoints(AC) {
+HP::HP(unsigned HP, unsigned AC) : m_hitPoints(HP), m_maxHP(HP), m_armorPoints(AC) {
     if(debugBoolean) {
         std::cout << ">>>> constructing HP" << std::endl;
     }
@@ -23,9 +23,12 @@ HP::~HP() {
 }
 
 /* Changing HP */
-int HP::operator-=(int dmg) {
+unsigned HP::operator-=(int dmg) {
     //cannot go lower than 0 -- ac subtracted from damage
-    int damage = dmg - m_armorPoints;
+    int damage = dmg - m_armorPoints; //TODO An error occurs here when dmg - armorPoints drop to lower than damage
+                                        //Quick fix by changing dmg and m_armorPoints to ints
+    if(damage < 0)
+        damage = 0;
 
     std::cout << "With an AC of " << m_armorPoints << ", " << damage << " damage was taken" << std::endl;
 
@@ -36,13 +39,18 @@ int HP::operator-=(int dmg) {
     }
     return m_hitPoints;
 }
-int HP::operator+=(int heal) {
+unsigned HP::operator+=(unsigned heal) {
     //cannot go higher than max hp
     if(m_hitPoints + heal > m_maxHP) {
         m_hitPoints = m_maxHP;
     } else {
         m_hitPoints += heal;
     }
+    return m_hitPoints;
+}
+
+/* Get */
+unsigned HP::getHP() const {
     return m_hitPoints;
 }
 
@@ -107,9 +115,4 @@ bool operator>=(HP& hp, const HP& myHp) {
 /* Ostream */
 std::ostream& operator<<(std::ostream& out, const HP& hp) {
     return out << hp.m_hitPoints;
-}
-
-/* Get */
-int HP::getHP() const {
-    return m_hitPoints;
 }

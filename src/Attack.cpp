@@ -6,7 +6,7 @@ std::string Attack::getInfo() {
     return m_name + ": damage: " + std::to_string(m_damage) + ", cooldown: " + std::to_string(m_cooldown);
 }
 
-int Attack::getDamage() {
+unsigned Attack::getDamage() const{
     return m_damage;
 }
 
@@ -16,7 +16,7 @@ std::ostream& operator<<(std::ostream& outStream, const Attack& atk) {
 
 //Constructors
 Attack::Attack(std::string name, int damage, int cooldown) :
-    m_name(name), m_damage(damage), m_cooldown(cooldown){
+    m_name(name), m_damage(damage), m_cooldown(cooldown), m_isReady(true){
     if(debugBoolean) {
         std::cout << ">>>> constructing Attack" << std::endl;
     }

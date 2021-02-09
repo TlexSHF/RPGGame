@@ -92,6 +92,9 @@
 		<Unit filename="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/HP.h">
 			<Option target="RPGSpill"/>
 		</Unit>
+		<Unit filename="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/NonPlayableCharacter.h">
+			<Option target="RPGSpill"/>
+		</Unit>
 		<Unit filename="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/PlayerCharacter.h">
 			<Option target="RPGSpill"/>
 		</Unit>
@@ -105,6 +108,9 @@
 			<Option target="RPGSpill"/>
 		</Unit>
 		<Unit filename="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/src/HP.cpp">
+			<Option target="RPGSpill"/>
+		</Unit>
+		<Unit filename="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/src/NonPlayableCharacter.cpp">
 			<Option target="RPGSpill"/>
 		</Unit>
 		<Unit filename="D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/src/PlayerCharacter.cpp">

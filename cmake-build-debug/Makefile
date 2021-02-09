@@ -250,6 +250,33 @@ src/HP.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make CMakeFiles/RPGSpill.dir/src/HP.cpp.s
 .PHONY : src/HP.cpp.s
 
+src/NonPlayableCharacter.obj: src/NonPlayableCharacter.cpp.obj
+
+.PHONY : src/NonPlayableCharacter.obj
+
+# target to build an object file
+src/NonPlayableCharacter.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make CMakeFiles/RPGSpill.dir/src/NonPlayableCharacter.cpp.obj
+.PHONY : src/NonPlayableCharacter.cpp.obj
+
+src/NonPlayableCharacter.i: src/NonPlayableCharacter.cpp.i
+
+.PHONY : src/NonPlayableCharacter.i
+
+# target to preprocess a source file
+src/NonPlayableCharacter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make CMakeFiles/RPGSpill.dir/src/NonPlayableCharacter.cpp.i
+.PHONY : src/NonPlayableCharacter.cpp.i
+
+src/NonPlayableCharacter.s: src/NonPlayableCharacter.cpp.s
+
+.PHONY : src/NonPlayableCharacter.s
+
+# target to generate assembly for a file
+src/NonPlayableCharacter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGSpill.dir\build.make CMakeFiles/RPGSpill.dir/src/NonPlayableCharacter.cpp.s
+.PHONY : src/NonPlayableCharacter.cpp.s
+
 src/PlayerCharacter.obj: src/PlayerCharacter.cpp.obj
 
 .PHONY : src/PlayerCharacter.obj
@@ -325,6 +352,9 @@ help:
 	@echo ... src/HP.obj
 	@echo ... src/HP.i
 	@echo ... src/HP.s
+	@echo ... src/NonPlayableCharacter.obj
+	@echo ... src/NonPlayableCharacter.i
+	@echo ... src/NonPlayableCharacter.s
 	@echo ... src/PlayerCharacter.obj
 	@echo ... src/PlayerCharacter.i
 	@echo ... src/PlayerCharacter.s

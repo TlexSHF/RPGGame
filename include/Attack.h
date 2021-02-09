@@ -9,7 +9,7 @@ class Attack {
 public:
     bool m_isReady;
     std::string getInfo();
-    int getDamage();
+    unsigned getDamage() const;
     friend std::ostream& operator<<(std::ostream& outStream, const Attack& atk);
     Attack(std::string name, int damage, int cooldown);
     Attack(const Attack& other);    //CopyConstructor
@@ -18,8 +18,8 @@ public:
 
 private:
     std::string m_name;
-    int m_damage;
-    int m_cooldown;
+    unsigned m_damage;
+    unsigned m_cooldown;
 };
 
 

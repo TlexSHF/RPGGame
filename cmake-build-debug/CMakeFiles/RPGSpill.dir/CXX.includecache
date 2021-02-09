@@ -30,6 +30,10 @@ D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/HP.h
 iostream
 -
 
+D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/NonPlayableCharacter.h
+Character.h
+D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/Character.h
+
 D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/PlayerCharacter.h
 Character.h
 D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/Character.h
@@ -37,12 +41,12 @@ D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/Character.h
 D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/src/GameManager.cpp
 iostream
 -
+sstream
+-
 ../include/GameManager.h
 D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/GameManager.h
 ../include/PlayerCharacter.h
 D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/PlayerCharacter.h
-
-D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/src/PlayerCharacter.cpp
-../include/PlayerCharacter.h
-D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/PlayerCharacter.h
+../include/NonPlayableCharacter.h
+D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/include/NonPlayableCharacter.h
 

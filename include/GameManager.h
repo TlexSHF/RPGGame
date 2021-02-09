@@ -15,9 +15,11 @@ public:
     ~GameManager();
     void startGame();
 private:
-    std::vector<Character> m_players;
+    std::vector<Character*> m_players;
     bool runTurn();
-    void createCharacter(int nPlayer);
+    void createPC(unsigned nPlayer);
+    void createNPC(unsigned nPlayer);
+    static std::string generateRdmName();
 };
 
 
