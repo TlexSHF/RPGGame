@@ -61,7 +61,6 @@ bool GameManager::runTurn() {
     round++;
     return continueGame;
 }
-
 void GameManager::createPC(unsigned nPlayer) {
     int pClass = 0;
     std::string pName = {};
@@ -95,8 +94,8 @@ void GameManager::createNPC(unsigned nPlayer) {
     std::cout << "Welcome " << pName << std::endl;
     m_players.push_back(new NonPlayableCharacter(pName, (GameClass)pClass, PlayerType::NPC));
 }
-
 std::string GameManager::generateRdmName() {
+
     std::ostringstream name;
     name << (char) (65 + (rand() % 26));
     name << (char) (97 + (rand() % 26));
@@ -104,10 +103,8 @@ std::string GameManager::generateRdmName() {
     name << (char) (97 + (rand() % 26));
     name << (char) (97 + (rand() % 26));
 
-
     return name.str();
 }
-
 GameManager::GameManager() {
     if(debugBoolean) {
         std::cout << ">>>> constructing GameManager" << std::endl;
@@ -121,8 +118,3 @@ GameManager::~GameManager() {
         delete player;
     }
 }
-
-
-
-
-

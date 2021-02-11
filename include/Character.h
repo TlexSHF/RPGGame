@@ -31,7 +31,7 @@ public:
 protected:
     std::string m_name;
     GameClass m_class;
-    HP m_hitPoints;
+    HP<int> m_hitPoints;
     std::vector<Attack> m_attacks;
     PlayerType m_playerType;
 
