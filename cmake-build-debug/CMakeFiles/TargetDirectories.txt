@@ -1,3 +1,0 @@
-D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/cmake-build-debug/CMakeFiles/RPGSpill.dir
-D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/KRISTANIA/2021-0Spring/C++/Projects/RPGSpill/cmake-build-debug/CMakeFiles/rebuild_cache.dir
